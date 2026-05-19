@@ -6,596 +6,284 @@
 
     <title>DIGIHub | AI Digital Marketing Agency in Chennai</title>
 
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
         content="DIGIHub is a leading AI-powered digital marketing agency in Chennai specializing in Google Ads, Meta Ads, SEO, branding, social media marketing, and performance-driven digital solutions.">
 
     <meta name="keywords"
-        content="AI digital marketing agency Chennai, Google Ads agency, Meta Ads management, SEO services Chennai, branding agency, social media marketing">
+        content="AI digital marketing agency Chennai, Google Ads agency, Meta Ads management, SEO services Chennai">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Jost:wght@500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         rel="stylesheet">
 
+    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
         rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+        }
 
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        .hero-header {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+        }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        .section-title span {
+            display: inline-block;
+            width: 40px;
+            height: 2px;
+            background: #6c757d;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+        .feature-item {
+            transition: 0.4s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background: #0d6efd;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #dcdcdc;
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            display: inline-flex;
+            z-index: 99;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <div class="container-xxl bg-white p-0">
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
 
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 px-lg-5 py-3">
 
-            <div class="spinner-grow text-primary"
-                style="width: 3rem; height: 3rem;"
-                role="status">
+            <a href="index.html" class="navbar-brand">
 
-                <span class="sr-only">Loading...</span>
+                <h1 class="m-0 text-primary">
+                    DIGIHub
+                </h1>
 
-            </div>
+            </a>
 
-        </div>
-        <!-- Spinner End -->
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
 
-        <!-- Navbar Start -->
-        <div class="container-xxl position-relative p-0">
+                <span class="fa fa-bars"></span>
 
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            </button>
 
-                <a href="index.html" class="navbar-brand p-0">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                    <h1 class="m-0">DIGIHub</h1>
+                <div class="navbar-nav mx-auto">
 
-                </a>
+                    <a href="index.html" class="nav-item nav-link">
+                        Home
+                    </a>
 
-                <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
+                    <a href="about.html" class="nav-item nav-link active">
+                        About
+                    </a>
 
-                    <span class="fa fa-bars"></span>
+                    <a href="service.html" class="nav-item nav-link">
+                        Services
+                    </a>
 
-                </button>
+                    <a href="project.html" class="nav-item nav-link">
+                        Projects
+                    </a>
 
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-
-                    <div class="navbar-nav mx-auto py-0">
-
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
-
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-
-                    </div>
-
-                    <a href="contact.html"
-                        class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">
-
-                        Get Started
-
+                    <a href="contact.html" class="nav-item nav-link">
+                        Contact
                     </a>
 
                 </div>
 
-            </nav>
+                <a href="contact.html"
+                    class="btn btn-primary rounded-pill px-4">
 
-            <!-- Hero Section -->
-            <div class="container-xxl py-5 bg-primary hero-header">
+                    Get Started
 
-                <div class="container my-5 py-5 px-lg-5">
+                </a>
 
-                    <div class="row g-5 py-5">
+            </div>
 
-                        <div class="col-12 text-center">
+        </nav>
 
-                            <h1 class="text-white animated slideInDown">
+    </div>
+    <!-- Navbar End -->
 
-                                About DIGIHub
 
-                            </h1>
+    <!-- Hero Start -->
+    <div class="container-fluid hero-header py-5 mb-5">
 
-                            <hr class="bg-white mx-auto mt-0"
-                                style="width: 90px;">
+        <div class="container py-5">
 
-                            <nav aria-label="breadcrumb">
+            <div class="text-center">
 
-                                <ol class="breadcrumb justify-content-center">
+                <h1 class="display-4 text-white mb-3">
+                    About DIGIHub
+                </h1>
 
-                                    <li class="breadcrumb-item">
-                                        <a class="text-white" href="index.html">Home</a>
-                                    </li>
-
-                                    <li class="breadcrumb-item text-white active"
-                                        aria-current="page">
-
-                                        About
-
-                                    </li>
-
-                                </ol>
-
-                            </nav>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                <p class="text-white fs-5">
+                    AI-Powered Digital Marketing Agency in Chennai
+                </p>
 
             </div>
 
         </div>
-        <!-- Navbar End -->
 
-        <!-- Feature Start -->
-        <div class="container-xxl py-5">
+    </div>
+    <!-- Hero End -->
 
-            <div class="container py-5 px-lg-5">
 
-                <div class="row g-4">
+    <!-- Features Start -->
+    <div class="container py-5">
 
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-4">
 
-                        <div class="feature-item bg-light rounded text-center p-4">
+            <div class="col-lg-4">
 
-                            <i class="fa fa-3x fa-bullhorn text-primary mb-4"></i>
+                <div class="feature-item bg-light rounded text-center p-4 h-100">
 
-                            <h5 class="mb-3">Digital Marketing</h5>
+                    <i class="fa fa-bullhorn fa-3x text-primary mb-4"></i>
 
-                            <p class="m-0">
-                                Strategic AI-powered marketing campaigns designed to grow your brand and increase online visibility.
-                            </p>
+                    <h5>Digital Marketing</h5>
 
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-
-                        <div class="feature-item bg-light rounded text-center p-4">
-
-                            <i class="fa fa-3x fa-search text-primary mb-4"></i>
-
-                            <h5 class="mb-3">SEO & Performance</h5>
-
-                            <p class="m-0">
-                                Advanced SEO strategies and performance marketing solutions focused on measurable business growth.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-
-                        <div class="feature-item bg-light rounded text-center p-4">
-
-                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-
-                            <h5 class="mb-3">Design & Development</h5>
-
-                            <p class="m-0">
-                                Creative website design and modern development solutions tailored for your business success.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- Feature End -->
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-
-            <div class="container py-5 px-lg-5">
-
-                <div class="row g-5 align-items-center">
-
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                        <p class="section-title text-secondary">
-                            About Us<span></span>
-                        </p>
-
-                        <h1 class="mb-5">
-                            Creative Minds Delivering Intelligent Digital Marketing Solutions
-                        </h1>
-
-                        <p class="mb-4">
-
-                            DIGIHub is a modern AI-powered digital marketing agency helping businesses build a powerful online presence through innovative strategies and performance-driven campaigns.
-
-                            Our expertise in Google Ads, Meta Ads, SEO, branding, social media marketing, and website development enables businesses to achieve measurable growth and long-term digital success.
-
-                        </p>
-
-                        <div class="skill mb-4">
-
-                            <div class="d-flex justify-content-between">
-
-                                <p class="mb-2">Digital Marketing</p>
-
-                                <p class="mb-2">95%</p>
-
-                            </div>
-
-                            <div class="progress">
-
-                                <div class="progress-bar bg-primary"
-                                    role="progressbar"
-                                    style="width:95%"
-                                    aria-valuenow="95"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="skill mb-4">
-
-                            <div class="d-flex justify-content-between">
-
-                                <p class="mb-2">SEO & Performance Marketing</p>
-
-                                <p class="mb-2">92%</p>
-
-                            </div>
-
-                            <div class="progress">
-
-                                <div class="progress-bar bg-secondary"
-                                    role="progressbar"
-                                    style="width:92%"
-                                    aria-valuenow="92"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="skill mb-4">
-
-                            <div class="d-flex justify-content-between">
-
-                                <p class="mb-2">Web Design & Development</p>
-
-                                <p class="mb-2">90%</p>
-
-                            </div>
-
-                            <div class="progress">
-
-                                <div class="progress-bar bg-dark"
-                                    role="progressbar"
-                                    style="width:90%"
-                                    aria-valuenow="90"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-
-                            </div>
-
-                        </div>
-
-                        <a href="service.html"
-                            class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">
-
-                            Explore Services
-
-                        </a>
-
-                    </div>
-
-                    <div class="col-lg-6">
-
-                        <img class="img-fluid wow zoomIn"
-                            data-wow-delay="0.5s"
-                            src="img/about.png"
-                            alt="DIGIHub About">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- About End -->
-
-        <!-- Facts Start -->
-        <div class="container-xxl bg-primary fact py-5 wow fadeInUp"
-            data-wow-delay="0.1s">
-
-            <div class="container py-5 px-lg-5">
-
-                <div class="row g-4">
-
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn">
-
-                        <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
-
-                        <h1 class="text-white mb-2"
-                            data-toggle="counter-up">
-
-                            10
-
-                        </h1>
-
-                        <p class="text-white mb-0">
-                            Years Experience
-                        </p>
-
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn">
-
-                        <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
-
-                        <h1 class="text-white mb-2"
-                            data-toggle="counter-up">
-
-                            25
-
-                        </h1>
-
-                        <p class="text-white mb-0">
-                            Team Members
-                        </p>
-
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn">
-
-                        <i class="fa fa-users fa-3x text-secondary mb-3"></i>
-
-                        <h1 class="text-white mb-2"
-                            data-toggle="counter-up">
-
-                            500
-
-                        </h1>
-
-                        <p class="text-white mb-0">
-                            Satisfied Clients
-                        </p>
-
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn">
-
-                        <i class="fa fa-check fa-3x text-secondary mb-3"></i>
-
-                        <h1 class="text-white mb-2"
-                            data-toggle="counter-up">
-
-                            1200
-
-                        </h1>
-
-                        <p class="text-white mb-0">
-                            Completed Projects
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- Facts End -->
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-
-            <div class="container py-5 px-lg-5">
-
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p class="section-title text-secondary justify-content-center">
-                        <span></span>Our Team<span></span>
+                    <p>
+                        AI-driven campaigns to boost brand visibility and customer engagement.
                     </p>
 
-                    <h1 class="text-center mb-5">
-                        Meet Our Creative Experts
-                    </h1>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="feature-item bg-light rounded text-center p-4 h-100">
+
+                    <i class="fa fa-search fa-3x text-primary mb-4"></i>
+
+                    <h5>SEO & Performance</h5>
+
+                    <p>
+                        Data-focused SEO and performance strategies for measurable growth.
+                    </p>
 
                 </div>
 
-                <div class="row g-4">
+            </div>
 
-                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+            <div class="col-lg-4">
 
-                        <div class="team-item bg-light rounded">
+                <div class="feature-item bg-light rounded text-center p-4 h-100">
 
-                            <div class="text-center border-bottom p-4">
+                    <i class="fa fa-laptop-code fa-3x text-primary mb-4"></i>
 
-                                <img class="img-fluid rounded-circle mb-4"
-                                    src="img/team-1.jpg"
-                                    alt="">
+                    <h5>Web Development</h5>
 
-                                <h5>Arun Kumar</h5>
-
-                                <span>Founder & Digital Strategist</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 wow fadeInUp">
-
-                        <div class="team-item bg-light rounded">
-
-                            <div class="text-center border-bottom p-4">
-
-                                <img class="img-fluid rounded-circle mb-4"
-                                    src="img/team-2.jpg"
-                                    alt="">
-
-                                <h5>Priya Sharma</h5>
-
-                                <span>Creative Web Designer</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 wow fadeInUp">
-
-                        <div class="team-item bg-light rounded">
-
-                            <div class="text-center border-bottom p-4">
-
-                                <img class="img-fluid rounded-circle mb-4"
-                                    src="img/team-3.jpg"
-                                    alt="">
-
-                                <h5>Rahul Verma</h5>
-
-                                <span>SEO & Performance Expert</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <p>
+                        Modern websites and responsive designs tailored for your business.
+                    </p>
 
                 </div>
 
             </div>
 
         </div>
-        <!-- Team End -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn">
+    </div>
+    <!-- Features End -->
 
-            <div class="container py-5 px-lg-5">
 
-                <div class="row g-5">
+    <!-- About Start -->
+    <div class="container py-5">
 
-                    <div class="col-md-6 col-lg-3">
+        <div class="row align-items-center g-5">
 
-                        <p class="section-title text-white h5 mb-4">
-                            Address<span></span>
-                        </p>
+            <div class="col-lg-6">
 
-                        <p>
-                            <i class="fa fa-map-marker-alt me-3"></i>
-                            Chennai, Tamil Nadu, India
-                        </p>
+                <img src="img/about.png"
+                    class="img-fluid rounded shadow"
+                    alt="About DIGIHub">
 
-                        <p>
-                            <i class="fa fa-phone-alt me-3"></i>
-                            +91 98765 43210
-                        </p>
+            </div>
 
-                        <p>
-                            <i class="fa fa-envelope me-3"></i>
-                            info@digihub.com
-                        </p>
+            <div class="col-lg-6">
 
-                    </div>
+                <p class="text-primary fw-bold">
+                    ABOUT US
+                </p>
 
-                    <div class="col-md-6 col-lg-3">
+                <h1 class="mb-4">
+                    Creative Digital Solutions That Deliver Results
+                </h1>
 
-                        <p class="section-title text-white h5 mb-4">
-                            Quick Links<span></span>
-                        </p>
+                <p class="mb-4">
 
-                        <a class="btn btn-link" href="">About Us</a>
+                    DIGIHub helps brands grow through AI-powered marketing,
+                    Google Ads, Meta Ads, SEO, branding,
+                    and web development solutions.
 
-                        <a class="btn btn-link" href="">Services</a>
+                </p>
 
-                        <a class="btn btn-link" href="">Projects</a>
+                <div class="mb-3">
 
-                        <a class="btn btn-link" href="">Contact</a>
+                    <label class="fw-bold">
+                        Digital Marketing
+                    </label>
 
-                    </div>
+                    <div class="progress">
 
-                    <div class="col-md-6 col-lg-3">
+                        <div class="progress-bar bg-primary"
+                            style="width:95%">
 
-                        <p class="section-title text-white h5 mb-4">
-                            Our Services<span></span>
-                        </p>
-
-                        <a class="btn btn-link" href="">Google Ads</a>
-
-                        <a class="btn btn-link" href="">Meta Ads</a>
-
-                        <a class="btn btn-link" href="">SEO Optimization</a>
-
-                        <a class="btn btn-link" href="">Web Development</a>
-
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-
-                        <p class="section-title text-white h5 mb-4">
-                            Newsletter<span></span>
-                        </p>
-
-                        <p>
-                            Subscribe for the latest AI marketing trends and digital growth insights.
-                        </p>
-
-                        <div class="position-relative w-100 mt-3">
-
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                                type="text"
-                                placeholder="Your Email"
-                                style="height: 48px;">
-
-                            <button type="button"
-                                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
-
-                                <i class="fa fa-paper-plane text-primary fs-4"></i>
-
-                            </button>
+                            95%
 
                         </div>
 
@@ -603,71 +291,296 @@
 
                 </div>
 
-            </div>
+                <div class="mb-3">
 
-            <div class="container px-lg-5">
+                    <label class="fw-bold">
+                        SEO & Performance
+                    </label>
 
-                <div class="copyright">
+                    <div class="progress">
 
-                    <div class="row">
+                        <div class="progress-bar bg-success"
+                            style="width:92%">
 
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-
-                            &copy; DIGIHub, All Rights Reserved.
-
-                        </div>
-
-                        <div class="col-md-6 text-center text-md-end">
-
-                            <div class="footer-menu">
-
-                                <a href="">Home</a>
-
-                                <a href="">Help</a>
-
-                                <a href="">FAQs</a>
-
-                            </div>
+                            92%
 
                         </div>
 
                     </div>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="fw-bold">
+                        Web Development
+                    </label>
+
+                    <div class="progress">
+
+                        <div class="progress-bar bg-dark"
+                            style="width:90%">
+
+                            90%
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <a href="service.html"
+                    class="btn btn-primary rounded-pill px-4 py-2">
+
+                    Explore Services
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-primary py-5">
+
+        <div class="container">
+
+            <div class="row text-center text-white g-4">
+
+                <div class="col-md-3">
+
+                    <i class="fa fa-certificate fa-3x mb-3"></i>
+
+                    <h1>10+</h1>
+
+                    <p>Years Experience</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <i class="fa fa-users-cog fa-3x mb-3"></i>
+
+                    <h1>25+</h1>
+
+                    <p>Team Members</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <i class="fa fa-users fa-3x mb-3"></i>
+
+                    <h1>500+</h1>
+
+                    <p>Satisfied Clients</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <i class="fa fa-check fa-3x mb-3"></i>
+
+                    <h1>1200+</h1>
+
+                    <p>Completed Projects</p>
 
                 </div>
 
             </div>
 
         </div>
-        <!-- Footer End -->
 
-        <!-- Back to Top -->
-        <a href="#"
-            class="btn btn-lg btn-secondary btn-lg-square back-to-top">
+    </div>
+    <!-- Facts End -->
 
-            <i class="bi bi-arrow-up"></i>
 
-        </a>
+    <!-- Team Start -->
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <p class="text-primary fw-bold">
+                OUR TEAM
+            </p>
+
+            <h1>
+                Meet Our Experts
+            </h1>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="team-item bg-light rounded text-center p-4">
+
+                    <img src="img/team-1.jpg"
+                        class="rounded-circle mb-3"
+                        alt="">
+
+                    <h5>Arun Kumar</h5>
+
+                    <p>Founder & Strategist</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="team-item bg-light rounded text-center p-4">
+
+                    <img src="img/team-2.jpg"
+                        class="rounded-circle mb-3"
+                        alt="">
+
+                    <h5>Priya Sharma</h5>
+
+                    <p>Creative Designer</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="team-item bg-light rounded text-center p-4">
+
+                    <img src="img/team-3.jpg"
+                        class="rounded-circle mb-3"
+                        alt="">
+
+                    <h5>Rahul Verma</h5>
+
+                    <p>SEO Specialist</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-light py-5">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3">
+
+                    <h5 class="text-white mb-4">
+                        Address
+                    </h5>
+
+                    <p>
+                        Chennai, Tamil Nadu, India
+                    </p>
+
+                    <p>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        info@digihub.com
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5 class="text-white mb-4">
+                        Quick Links
+                    </h5>
+
+                    <a href="#">About Us</a><br>
+
+                    <a href="#">Services</a><br>
+
+                    <a href="#">Projects</a><br>
+
+                    <a href="#">Contact</a>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5 class="text-white mb-4">
+                        Services
+                    </h5>
+
+                    <p>Google Ads</p>
+
+                    <p>Meta Ads</p>
+
+                    <p>SEO Optimization</p>
+
+                    <p>Web Development</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5 class="text-white mb-4">
+                        Newsletter
+                    </h5>
+
+                    <p>
+                        Subscribe for the latest digital marketing updates.
+                    </p>
+
+                    <input type="email"
+                        class="form-control mb-3"
+                        placeholder="Your Email">
+
+                    <button class="btn btn-light w-100">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright -->
+    <div class="container-fluid bg-dark text-light py-3">
+
+        <div class="container text-center">
+
+            &copy; 2026 DIGIHub. All Rights Reserved.
+
+        </div>
 
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+    <!-- Back To Top -->
+    <a href="#"
+        class="btn btn-primary btn-lg-square rounded-circle back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="lib/wow/wow.min.js"></script>
+</body>
 
-    <script src="lib/easing/easing.min.js"></script>
-
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <script src="lib/counterup/counterup.min.js"></script>
-
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src=
+</html>
