@@ -513,13 +513,22 @@ h6,
 .footer {
     margin-top: 6rem;
     padding-top: 9rem;
-    background:
-        url(../img/bg-top.png),
-        url(../img/map.png);
-    background-position:
-        center top,
-        center center;
-    background-repeat: no-repeat;
+
+    /* Professional Blue Gradient */
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 50%, #1E3A8A 100%);
+
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional soft overlay */
+.footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.03);
+    pointer-events: none;
 }
 
 .footer .btn.btn-social {
@@ -529,14 +538,15 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
-    border: 1px solid rgba(256, 256, 256, .1);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,.30);
     border-radius: 40px;
     transition: .3s;
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    background: #ffffff;
+    color: #2563EB;
 }
 
 .footer .btn.btn-link {
@@ -544,7 +554,7 @@ h6,
     margin-bottom: 10px;
     padding: 0;
     text-align: left;
-    color: var(--light);
+    color: #ffffff;
     font-weight: normal;
     transition: .3s;
 }
@@ -558,34 +568,50 @@ h6,
 }
 
 .footer .btn.btn-link:hover {
+    color: #FFD54F;
     letter-spacing: 1px;
     box-shadow: none;
-    color: var(--secondary);
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer p,
+.footer a,
+.footer span,
+.footer li {
+    color: #ffffff;
 }
 
 .footer .copyright {
     padding: 25px 0;
     font-size: 14px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid rgba(255,255,255,.20);
+    color: #ffffff;
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer .copyright a:hover,
+.footer .footer-menu a:hover {
+    color: #FFD54F;
 }
 
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid rgba(255,255,255,.20);
+    color: #ffffff;
 }
 
 .footer .footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-}
-
-.footer .copyright a:hover,
-.footer .footer-menu a:hover {
-    color: var(--secondary);
 }
