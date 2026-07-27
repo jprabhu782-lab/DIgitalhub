@@ -667,3 +667,219 @@ body::after{
 .newsletter{
     background:transparent!important;
 }
+
+/* ==========================================================
+   DIGIHUB GALAXY / MULTIVERSE THEME
+   Paste this at the END of style.css
+========================================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#030712;
+    background-image:
+    radial-gradient(circle at 20% 20%,rgba(98,34,204,.30),transparent 35%),
+    radial-gradient(circle at 80% 30%,rgba(37,99,235,.28),transparent 40%),
+    radial-gradient(circle at 50% 80%,rgba(139,92,246,.20),transparent 45%),
+    linear-gradient(135deg,#020617,#0F172A,#111827,#1E1B4B);
+    background-attachment:fixed;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Stars */
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image:
+    radial-gradient(#ffffff 1px,transparent 1px),
+    radial-gradient(#ffffff 1px,transparent 1px),
+    radial-gradient(#ffffff 1px,transparent 1px),
+    radial-gradient(#ffffff 1px,transparent 1px);
+    background-size:180px 180px,220px 220px,260px 260px,300px 300px;
+    opacity:.18;
+    animation:starsMove 120s linear infinite;
+    z-index:-2;
+}
+
+@keyframes starsMove{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-400px);
+    }
+}
+
+/* Nebula Glow */
+
+body:after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 10% 20%,rgba(124,58,237,.28),transparent 40%),
+    radial-gradient(circle at 90% 80%,rgba(37,99,235,.22),transparent 40%),
+    radial-gradient(circle at 60% 40%,rgba(255,255,255,.05),transparent 30%);
+    z-index:-1;
+    pointer-events:none;
+}
+
+/* Transparent Sections */
+
+.container,
+.container-fluid,
+.container-xxl,
+section{
+    background:transparent !important;
+}
+
+/* Hero */
+
+.hero-header{
+    background:
+    linear-gradient(rgba(2,6,23,.55),rgba(2,6,23,.70)),
+    url(../img/blob-top-left.png),
+    url(../img/blob-top-right.png),
+    url(../img/blob-bottom-left.png),
+    url(../img/blob-bottom-right.png),
+    url(../img/blob-center.png),
+    url(../img/bg-bottom.png);
+    background-repeat:no-repeat;
+    background-position:
+    center,
+    left top,
+    right top,
+    left bottom,
+    right bottom,
+    center,
+    center bottom;
+}
+
+/* Navbar */
+
+.navbar-light{
+    background:rgba(3,7,18,.18);
+    backdrop-filter:blur(15px);
+}
+
+.sticky-top.navbar-light{
+    background:rgba(2,6,23,.92)!important;
+    backdrop-filter:blur(18px);
+}
+
+/* Glass Cards */
+
+.feature-item,
+.service-item,
+.team-item,
+.testimonial-item{
+    background:rgba(255,255,255,.06)!important;
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:18px;
+    transition:.4s;
+}
+
+.feature-item:hover,
+.service-item:hover,
+.team-item:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(0,0,0,.45);
+}
+
+/* Fact */
+
+.fact{
+    background:rgba(255,255,255,.04)!important;
+    border-radius:20px;
+}
+
+/* Newsletter */
+
+.newsletter{
+    background:rgba(255,255,255,.04)!important;
+    border-radius:20px;
+}
+
+/* Portfolio */
+
+.portfolio-item{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+/* Buttons */
+
+.btn-primary{
+    background:linear-gradient(135deg,#2563EB,#6222CC);
+    border:none;
+}
+
+.btn-primary:hover{
+    background:linear-gradient(135deg,#6222CC,#2563EB);
+}
+
+/* Footer */
+
+.footer{
+    background:linear-gradient(135deg,#2563EB,#1D4ED8,#1E3A8A)!important;
+}
+
+/* Text */
+
+h1,h2,h3,h4,h5,h6{
+    color:#fff;
+}
+
+p{
+    color:#dbe4ff;
+}
+
+/* Glass Hover */
+
+.service-item:hover{
+    background:rgba(98,34,204,.35)!important;
+}
+
+.feature-item:hover{
+    background:rgba(37,99,235,.18)!important;
+}
+
+.team-item:hover{
+    background:rgba(255,255,255,.10)!important;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563EB;
+    border-radius:30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#6222CC;
+}
+
+/* Animation */
+
+.feature-item,
+.service-item,
+.team-item,
+.portfolio-item,
+.btn{
+    transition:all .4s ease;
+}
