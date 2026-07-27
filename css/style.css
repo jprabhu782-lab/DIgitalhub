@@ -883,3 +883,237 @@ p{
 .btn{
     transition:all .4s ease;
 }
+
+/* ==========================================
+   EXTRA GALAXY EFFECTS
+   ADD BELOW THE PREVIOUS GALAXY CSS
+==========================================*/
+
+/* Shooting Meteors */
+
+body{
+    position:relative;
+}
+
+body .meteor,
+body .meteor2,
+body .meteor3,
+body .meteor4{
+    position:fixed;
+    width:180px;
+    height:2px;
+    background:linear-gradient(90deg,#fff,rgba(255,255,255,0));
+    transform:rotate(-35deg);
+    z-index:-1;
+    pointer-events:none;
+}
+
+body .meteor{
+    top:10%;
+    left:-20%;
+    animation:meteor1 7s linear infinite;
+}
+
+body .meteor2{
+    top:25%;
+    left:-40%;
+    animation:meteor2 10s linear infinite;
+}
+
+body .meteor3{
+    top:60%;
+    left:-50%;
+    animation:meteor3 12s linear infinite;
+}
+
+body .meteor4{
+    top:75%;
+    left:-30%;
+    animation:meteor4 15s linear infinite;
+}
+
+@keyframes meteor1{
+    from{
+        transform:translateX(0) translateY(0) rotate(-35deg);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    to{
+        transform:translateX(1800px) translateY(800px) rotate(-35deg);
+        opacity:0;
+    }
+}
+
+@keyframes meteor2{
+    from{
+        transform:translateX(0) translateY(0) rotate(-35deg);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    to{
+        transform:translateX(1700px) translateY(700px) rotate(-35deg);
+        opacity:0;
+    }
+}
+
+@keyframes meteor3{
+    from{
+        transform:translateX(0) translateY(0) rotate(-35deg);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    to{
+        transform:translateX(1600px) translateY(650px) rotate(-35deg);
+        opacity:0;
+    }
+}
+
+@keyframes meteor4{
+    from{
+        transform:translateX(0) translateY(0) rotate(-35deg);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    to{
+        transform:translateX(1900px) translateY(850px) rotate(-35deg);
+        opacity:0;
+    }
+}
+
+/* Moon */
+
+.hero-header::before{
+    content:"";
+    position:absolute;
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    right:8%;
+    top:8%;
+    background:
+    radial-gradient(circle at 35% 35%,#ffffff,#dbeafe 60%,#94a3b8);
+    box-shadow:
+    0 0 60px rgba(255,255,255,.4),
+    0 0 120px rgba(59,130,246,.3);
+    z-index:0;
+}
+
+/* Black Hole */
+
+.hero-header::after{
+    content:"";
+    position:absolute;
+    left:8%;
+    top:15%;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:
+    radial-gradient(circle,#000 35%,#4c1d95 58%,#2563eb 72%,transparent 75%);
+    filter:blur(1px);
+    animation:blackHole 15s linear infinite;
+    opacity:.9;
+}
+
+@keyframes blackHole{
+
+    from{
+        transform:rotate(0deg) scale(1);
+    }
+
+    50%{
+        transform:rotate(180deg) scale(1.05);
+    }
+
+    to{
+        transform:rotate(360deg) scale(1);
+    }
+
+}
+
+/* Floating Galaxy Glow */
+
+.hero-header{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.hero-header span{
+
+    position:absolute;
+    border-radius:50%;
+    filter:blur(70px);
+
+}
+
+.hero-header span:nth-child(1){
+
+    width:280px;
+    height:280px;
+    background:#7c3aed;
+    top:-120px;
+    left:-120px;
+    opacity:.18;
+    animation:floatGalaxy 14s ease-in-out infinite;
+
+}
+
+.hero-header span:nth-child(2){
+
+    width:220px;
+    height:220px;
+    background:#2563eb;
+    bottom:-80px;
+    right:-80px;
+    opacity:.15;
+    animation:floatGalaxy2 18s ease-in-out infinite;
+
+}
+
+@keyframes floatGalaxy{
+
+    0%{transform:translate(0,0);}
+    50%{transform:translate(50px,40px);}
+    100%{transform:translate(0,0);}
+
+}
+
+@keyframes floatGalaxy2{
+
+    0%{transform:translate(0,0);}
+    50%{transform:translate(-60px,-30px);}
+    100%{transform:translate(0,0);}
+
+}
+
+/* Twinkling Stars */
+
+@keyframes twinkle{
+
+    0%,100%{
+        opacity:.2;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+}
+
+body:before{
+
+    animation:
+    starsMove 120s linear infinite,
+    twinkle 3s ease-in-out infinite;
+
+}
