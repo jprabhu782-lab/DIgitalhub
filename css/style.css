@@ -988,57 +988,6 @@ body .meteor4{
     }
 }
 
-/* Moon */
-
-.hero-header::before{
-    content:"";
-    position:absolute;
-    width:130px;
-    height:130px;
-    border-radius:50%;
-    right:8%;
-    top:8%;
-    background:
-    radial-gradient(circle at 35% 35%,#ffffff,#dbeafe 60%,#94a3b8);
-    box-shadow:
-    0 0 60px rgba(255,255,255,.4),
-    0 0 120px rgba(59,130,246,.3);
-    z-index:0;
-}
-
-/* Black Hole */
-
-.hero-header::after{
-    content:"";
-    position:absolute;
-    left:8%;
-    top:15%;
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    background:
-    radial-gradient(circle,#000 35%,#4c1d95 58%,#2563eb 72%,transparent 75%);
-    filter:blur(1px);
-    animation:blackHole 15s linear infinite;
-    opacity:.9;
-}
-
-@keyframes blackHole{
-
-    from{
-        transform:rotate(0deg) scale(1);
-    }
-
-    50%{
-        transform:rotate(180deg) scale(1.05);
-    }
-
-    to{
-        transform:rotate(360deg) scale(1);
-    }
-
-}
-
 /* Floating Galaxy Glow */
 
 .hero-header{
@@ -1115,5 +1064,219 @@ body:before{
     animation:
     starsMove 120s linear infinite,
     twinkle 3s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   PREMIUM FALLING METEORS
+   REMOVE:
+   - Moon (::before)
+   - BlackHole (::after)
+   KEEP everything else.
+   Then ADD this below your Galaxy CSS.
+==========================================*/
+
+/* Hero */
+
+.hero-header{
+    position:relative;
+    overflow:hidden;
+}
+
+/* Nebula Glow */
+
+.hero-header span{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(70px);
+}
+
+.hero-header span:nth-child(1){
+    width:320px;
+    height:320px;
+    background:#7C3AED;
+    top:-150px;
+    left:-150px;
+    opacity:.18;
+    animation:nebula1 18s ease-in-out infinite;
+}
+
+.hero-header span:nth-child(2){
+    width:260px;
+    height:260px;
+    background:#2563EB;
+    bottom:-120px;
+    right:-120px;
+    opacity:.16;
+    animation:nebula2 20s ease-in-out infinite;
+}
+
+@keyframes nebula1{
+
+0%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(80px,50px);
+}
+
+100%{
+transform:translate(0,0);
+}
+
+}
+
+@keyframes nebula2{
+
+0%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(-70px,-50px);
+}
+
+100%{
+transform:translate(0,0);
+}
+
+}
+
+/* ===========================
+   MANY FALLING METEORS
+===========================*/
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+background-image:
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.95) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.75) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.65) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.80) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.70) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.90) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.60) 49%,transparent 50%),
+
+linear-gradient(135deg,transparent 48%,rgba(255,255,255,.85) 49%,transparent 50%);
+
+background-size:
+
+180px 180px,
+
+220px 220px,
+
+260px 260px,
+
+320px 320px,
+
+380px 380px,
+
+440px 440px,
+
+500px 500px,
+
+560px 560px;
+
+opacity:.35;
+
+animation:meteorRain 22s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes meteorRain{
+
+0%{
+
+transform:translate(-250px,-450px);
+
+}
+
+100%{
+
+transform:translate(450px,900px);
+
+}
+
+}
+
+/* ===========================
+   TWINKLING STARS
+===========================*/
+
+body::before{
+
+animation:
+
+starsMove 120s linear infinite,
+
+twinkle 2.8s ease-in-out infinite;
+
+}
+
+/* ===========================
+   EXTRA STAR GLOW
+===========================*/
+
+.feature-item:hover,
+.service-item:hover,
+.team-item:hover{
+
+box-shadow:
+
+0 0 25px rgba(37,99,235,.35),
+
+0 0 50px rgba(124,58,237,.25),
+
+0 20px 45px rgba(0,0,0,.45);
+
+}
+
+/* ===========================
+   FLOATING LIGHT
+===========================*/
+
+.hero-header{
+
+animation:spaceMove 18s ease-in-out infinite;
+
+}
+
+@keyframes spaceMove{
+
+0%{
+background-position:center;
+}
+
+50%{
+background-position:center 15px;
+}
+
+100%{
+background-position:center;
+}
 
 }
