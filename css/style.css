@@ -1334,4 +1334,411 @@ bottom:110%;
 
 }
 
+/* ===========================================
+        PREMIUM LIVE UNIVERSE BACKGROUND
+        ADD AT THE END OF style.css
+=========================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    background:
+    radial-gradient(circle at 50% 50%,#2d1b69 0%,#111827 35%,#030712 75%,#000000 100%);
+    background-attachment:fixed;
+    animation:spaceColor 20s ease-in-out infinite alternate;
+}
+
+/* ===========================================
+                STARS
+=========================================== */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(circle,#fff 1px,transparent 2px),
+
+radial-gradient(circle,#ffffff 1px,transparent 2px),
+
+radial-gradient(circle,#dbeafe 2px,transparent 3px),
+
+radial-gradient(circle,#ffffff 2px,transparent 3px),
+
+radial-gradient(circle,#93c5fd 2px,transparent 3px);
+
+background-size:
+
+180px 180px,
+
+260px 260px,
+
+320px 320px,
+
+420px 420px,
+
+520px 520px;
+
+opacity:.45;
+
+animation:
+
+starsMove 180s linear infinite,
+
+starsBlink 3s ease-in-out infinite;
+
+z-index:-5;
+
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-800px);
+
+}
+
+}
+
+@keyframes starsBlink{
+
+0%,100%{
+
+opacity:.25;
+
+}
+
+50%{
+
+opacity:.7;
+
+}
+
+}
+
+/* ===========================================
+            GALAXY GLOW
+=========================================== */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(circle at 18% 30%,rgba(139,92,246,.22),transparent 30%),
+
+radial-gradient(circle at 80% 20%,rgba(59,130,246,.22),transparent 30%),
+
+radial-gradient(circle at 75% 70%,rgba(236,72,153,.18),transparent 28%),
+
+radial-gradient(circle at 25% 80%,rgba(59,130,246,.18),transparent 28%),
+
+radial-gradient(circle at 50% 50%,rgba(255,255,255,.04),transparent 40%);
+
+filter:blur(30px);
+
+animation:nebulaMove 25s ease-in-out infinite alternate;
+
+z-index:-4;
+
+}
+
+@keyframes nebulaMove{
+
+0%{
+
+transform:scale(1) rotate(0deg);
+
+}
+
+100%{
+
+transform:scale(1.15) rotate(5deg);
+
+}
+
+}
+
+/* ===========================================
+            MOVING PLANETS
+=========================================== */
+
+.planet1,
+.planet2,
+.planet3,
+.planet4,
+.planet5,
+.planet6{
+
+position:fixed;
+
+border-radius:50%;
+
+pointer-events:none;
+
+z-index:-3;
+
+animation-timing-function:linear;
+
+animation-iteration-count:infinite;
+
+}
+
+.planet1{
+
+width:120px;
+height:120px;
+top:8%;
+left:-10%;
+background:radial-gradient(circle,#5b21b6,#1e1b4b,#000);
+box-shadow:0 0 40px #7c3aed;
+animation:planetMove1 90s linear infinite;
+
+}
+
+.planet2{
+
+width:70px;
+height:70px;
+top:70%;
+left:110%;
+background:radial-gradient(circle,#2563eb,#020617);
+box-shadow:0 0 25px #3b82f6;
+animation:planetMove2 70s linear infinite;
+
+}
+
+.planet3{
+
+width:90px;
+height:90px;
+top:35%;
+left:110%;
+background:radial-gradient(circle,#fb923c,#7c2d12);
+box-shadow:0 0 30px orange;
+animation:planetMove3 95s linear infinite;
+
+}
+
+.planet4{
+
+width:50px;
+height:50px;
+top:82%;
+left:-8%;
+background:radial-gradient(circle,#06b6d4,#0f172a);
+animation:planetMove4 80s linear infinite;
+
+}
+
+.planet5{
+
+width:140px;
+height:140px;
+top:50%;
+left:-15%;
+background:radial-gradient(circle,#111,#000,#312e81);
+box-shadow:0 0 45px #4f46e5;
+animation:planetMove5 110s linear infinite;
+
+}
+
+.planet6{
+
+width:65px;
+height:65px;
+top:15%;
+left:105%;
+background:radial-gradient(circle,#9333ea,#312e81);
+animation:planetMove6 85s linear infinite;
+
+}
+
+@keyframes planetMove1{
+
+from{transform:translateX(0);}
+to{transform:translateX(140vw);}
+
+}
+
+@keyframes planetMove2{
+
+from{transform:translateX(0);}
+to{transform:translateX(-150vw);}
+
+}
+
+@keyframes planetMove3{
+
+from{transform:translateX(0);}
+to{transform:translateX(-150vw);}
+
+}
+
+@keyframes planetMove4{
+
+from{transform:translateX(0);}
+to{transform:translateX(150vw);}
+
+}
+
+@keyframes planetMove5{
+
+from{transform:translateX(0);}
+to{transform:translateX(160vw);}
+
+}
+
+@keyframes planetMove6{
+
+from{transform:translateX(0);}
+to{transform:translateX(-170vw);}
+
+}
+
+/* ===========================================
+            FALLING METEORS
+=========================================== */
+
+.meteor{
+
+position:fixed;
+
+width:220px;
+
+height:2px;
+
+background:linear-gradient(90deg,#fff,rgba(255,255,255,0));
+
+transform:rotate(-35deg);
+
+pointer-events:none;
+
+z-index:-2;
+
+opacity:.7;
+
+}
+
+.m1{
+
+top:8%;
+left:-20%;
+animation:meteor1 8s linear infinite;
+
+}
+
+.m2{
+
+top:18%;
+left:-40%;
+animation:meteor2 12s linear infinite;
+
+}
+
+.m3{
+
+top:48%;
+left:-20%;
+animation:meteor3 9s linear infinite;
+
+}
+
+.m4{
+
+top:70%;
+left:-30%;
+animation:meteor4 14s linear infinite;
+
+}
+
+@keyframes meteor1{
+
+from{transform:translate(0,0) rotate(-35deg);}
+to{transform:translate(1900px,900px) rotate(-35deg);}
+
+}
+
+@keyframes meteor2{
+
+from{transform:translate(0,0) rotate(-35deg);}
+to{transform:translate(1800px,800px) rotate(-35deg);}
+
+}
+
+@keyframes meteor3{
+
+from{transform:translate(0,0) rotate(-35deg);}
+to{transform:translate(1700px,900px) rotate(-35deg);}
+
+}
+
+@keyframes meteor4{
+
+from{transform:translate(0,0) rotate(-35deg);}
+to{transform:translate(2000px,1000px) rotate(-35deg);}
+
+}
+
+/* ===========================================
+            SPACE COLOR SHIFT
+=========================================== */
+
+@keyframes spaceColor{
+
+0%{
+
+filter:hue-rotate(0deg);
+
+}
+
+50%{
+
+filter:hue-rotate(10deg);
+
+}
+
+100%{
+
+filter:hue-rotate(-10deg);
+
+}
+
 }
