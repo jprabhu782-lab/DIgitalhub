@@ -510,47 +510,17 @@ h6,
 
 
 /*** Footer ***/
-.footer {
-    /* ===== Transparent Footer ===== */
-
-.footer{
+ .footer{
+    margin-top: 6rem;
+    padding-top: 9rem;
     background: transparent !important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-top: 1px solid rgba(255,255,255,.08);
-    box-shadow: none;
-}
-
-.footer::before{
-    display: none !important;
-}
-
-.footer .copyright{
-    background: transparent !important;
-    border-top: 1px solid rgba(255,255,255,.08);
-}
-
-.footer .btn.btn-social{
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.15);
-}
-
-.footer .btn.btn-social:hover{
-    background: rgba(255,255,255,.15);
-    color: #fff;
-}
-
-.footer .btn.btn-link,
-.footer p,
-.footer h1,
-.footer h2,
-.footer h3,
-.footer h4,
-.footer h5,
-.footer h6,
-.footer a,
-.footer span{
-    color: #ffffff;
+    color:#ffffff;
+    position:relative;
+    overflow:hidden;
+    box-shadow:none;
 }
 
 /* Optional soft overlay */
