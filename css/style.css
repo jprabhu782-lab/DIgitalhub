@@ -1633,29 +1633,7 @@ to{transform:translateX(-170vw);}
 
 }
 
-/* ===========================================
-            FALLING METEORS
-=========================================== */
 
-.meteor{
-
-position:fixed;
-
-width:220px;
-
-height:2px;
-
-background:linear-gradient(90deg,#fff,rgba(255,255,255,0));
-
-transform:rotate(-35deg);
-
-pointer-events:none;
-
-z-index:-2;
-
-opacity:.7;
-
-}
 
 .m1{
 
