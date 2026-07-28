@@ -508,27 +508,29 @@ h6,
     background: var(--primary);
 }
 
-
 /*** Footer ***/
- .footer{
+.footer {
     margin-top: 6rem;
     padding-top: 9rem;
+
+    /* Transparent Glass Footer */
     background: transparent !important;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255,255,255,.08);
-    color:#ffffff;
-    position:relative;
-    overflow:hidden;
-    box-shadow:none;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-top: 1px solid rgba(255,255,255,.10);
+
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Optional soft overlay */
+/* Remove Blue Overlay */
 .footer::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,0.03);
+    background: transparent !important;
     pointer-events: none;
 }
 
@@ -540,14 +542,15 @@ h6,
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    border: 1px solid rgba(255,255,255,.30);
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.20);
     border-radius: 40px;
     transition: .3s;
 }
 
 .footer .btn.btn-social:hover {
-    background: #ffffff;
-    color: #2563EB;
+    background: rgba(255,255,255,.15);
+    color: #ffffff;
 }
 
 .footer .btn.btn-link {
@@ -590,8 +593,9 @@ h6,
 .footer .copyright {
     padding: 25px 0;
     font-size: 14px;
-    border-top: 1px solid rgba(255,255,255,.20);
+    border-top: 1px solid rgba(255,255,255,.10);
     color: #ffffff;
+    background: transparent !important;
 }
 
 .footer .copyright a {
@@ -616,6 +620,7 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
 
 /* ============================
    DIGIHub Universe Theme
