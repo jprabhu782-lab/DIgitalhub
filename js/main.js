@@ -135,8 +135,6 @@
     
     }
     
-   
- 
     function nebula(){
     
     let g=ctx.createRadialGradient(
@@ -206,5 +204,3 @@
     requestAnimationFrame(animate);
     
     }
-    
-    animate();
